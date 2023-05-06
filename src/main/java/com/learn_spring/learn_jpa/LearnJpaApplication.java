@@ -19,7 +19,7 @@ public class LearnJpaApplication {
 	@Bean
 	CommandLineRunner commandLineRunner(@Qualifier("studentDao") StudentDAO studentDAO) {
 		return runner -> {
-			this.deleteAllStudent(studentDAO);
+			this.createMultipleStudents(studentDAO);
 		};
 	}
 
